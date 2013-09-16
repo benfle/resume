@@ -80,7 +80,7 @@ If you think I could be a good fit, contact me at <a href="mailto:me@benfle.com"
 * Microsoft @@html:<span class="small">Feb. 2008 — Apr. 2011</span>@@
 ** Working group
    #+BEGIN_QUOTE
-   The success of the vteam was in direct relation to the committed time and effort Benoit provided. Further, Benoit acted as a superb representative for our team by providing insight and understanding for other groups represented by the various vteam members. — Working group organizer.
+   "The success of the vteam was in direct relation to the committed time and effort Benoit provided. Further, Benoit acted as a superb representative for our team by providing insight and understanding for other groups represented by the various vteam members." — Working group organizer.
    #+END_QUOTE
    As a program manager, I participated to a mobile advertising vTeam (virtual team) focused on competition and delivered a presentation during an internal summit.
 ** Mobile ad client library
