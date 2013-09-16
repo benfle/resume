@@ -1,0 +1,146 @@
+* { margin:0; padding: 0; }
+
+/**** body */
+
+body {
+    background: white;
+    font: 12px/20px Georgia, "Times New Roman", serif;
+    margin: 10px 100px 100px 100px;
+}
+
+p {
+    width: 380px;
+    text-align: justify;
+}
+
+/**** margin */
+
+img, blockquote {
+    position: absolute;
+    margin: 0;
+    margin-left: 400px;
+}
+
+blockquote p {
+    text-align: left;
+    font-style: italic;
+    width: 400px;
+    color: #999;
+}
+
+img {
+    max-height: 150px;
+}
+
+/**** headings & links */
+
+h1, h2, h3, .subtitle {
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+h2, h3, a, a:visited {
+    color: rgb(204, 0, 0);
+}
+
+h1 {
+    font-size: 28px;
+    margin: 25px auto 5px auto;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    color: #666;
+}
+
+h2 {
+    margin: 15px 0;
+}
+
+h2 .small {
+    letter-spacing: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/**** lists */
+
+ul {
+    padding-left: 14px;
+}
+
+li {
+    list-style-type: circle;
+}
+
+/**** postamble */
+
+#postamble {
+    margin-top: 40px;
+}
+
+#postamble p {
+    width: auto;
+    color: #999;
+    font-style: italic;
+}
+
+#postamble p.validation {
+    display: none;
+}
+
+/**** contacts */
+
+#contact {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#contact li {
+    display: inline-block;
+}
+
+#contact li a {
+    color: #666;
+    font-size: 22px;
+}
+
+#contact li a:hover {
+    text-decoration: none;
+}
+
+@media print {
+    #pdf, #contact {
+        display: none;
+    }
+    .subtitle, h2, h3 {
+        color: #000;
+    }
+    h2 {
+        font-weight: 400;
+    }
+    p a, li a {
+        color: #000;
+        font-syle: italic;
+    }
+    blockquote p {
+        color: #000;
+    }
+    body {
+        margin-bottom: 0;
+    }
+}
