@@ -5,7 +5,7 @@
             [clojure.spec.alpha :as s]
             [clojure.string :as str]
             [clojure.data.codec.base64 :as base64]
-            [hiccup.core :refer [html]]
+            [hiccup.page :refer [html5]]
             [clojure.java.shell :refer [sh]]))
 
 ;; Specs
@@ -180,7 +180,7 @@
     (->> resume
          (s/conform ::resume)
          render-resume
-         html
+         (html5 {:lang "en"})
          (spit "index.html"))))
 
 (comment
