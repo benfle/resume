@@ -32,7 +32,7 @@
                                :image "cognitect.svg"}
                  :projects
                  ["As part of a team of two developers, I built the front-end and back-end of a <em>simulation testing</em> suite for one of the largest e-commerce platform in the world. The purpose of simulation testing is to (1) model the user's behavior on the website, (2) generate test scenarios against the system's endpoints, (3) run the scenarios, and (4) validate the responses and states of the system during the execution of the scenarios. The application was built in <em>Clojure</em> and <em>Datomic</em> with the <a href=\"https://github.com/Datomic/simulant\" title=\"Simulant github repository\">Simulant library</a>."
-                  "Built a real-time database replication system in <em>Clojure</em> on AWS (<em>DynamoDB</em>, <em>S3</em>) for one ot the biggest hotel chain in the United States. The service processed a constant stream of room rates and availability updates represented as XML documents. The updates were processed and stored into DynamoDB tables. All updates were logged to S3 for recovery purpose."],
+                  "Built a real-time database replication system in <em>Clojure</em> on AWS (<em>DynamoDB</em>, <em>S3</em>) for one of the biggest hotel chain in the United States. The service processed a constant stream of room rates and availability updates represented as XML documents. The updates were processed and stored into DynamoDB tables. All updates were logged to S3 for recovery purpose."],
                  :recommendations
                  [#:recommendation{:text
                                    "Benoit and I worked closely together while at Room Key. At the time, he was a consultant to Cognitect. He impressed me enough with his knowledge and dedication that I recommended him for hire, a recommendation that was accepted to Cognitect's benefit. We subsequently worked together on a major and at times difficult project at Walmart, where his contributions continued at the highest level."
@@ -72,7 +72,7 @@
                  [#:recommendation{:text
                                    "The success of the vteam was in direct relation to the committed time and effort Benoit provided. Further, Benoit acted as a superb representative for our team by providing insight and understanding for other groups represented by the various vteam members."
                                    :author "Working group organizer"}]}
-          #:work{:period [2008 2011]
+          #:work{:period [2008 2010]
                  :title "Software Design Engineer"
                  :affiliation
                  #:affiliation{:name "Microsoft"
