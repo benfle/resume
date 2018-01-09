@@ -5,7 +5,8 @@
             [clojure.spec.alpha :as s]
             [clojure.string :as str]
             [clojure.data.codec.base64 :as base64]
-            [hiccup.page :refer [html5]]
+            [hiccup.core :refer [html]]
+            [hiccup.page :refer [doctype]]
             [clojure.java.shell :refer [sh]]))
 
 ;; Specs
@@ -136,11 +137,11 @@
   "Publish the resume as HTML"
   [{:keys [resume/name resume/tagline resume/notable-affiliations resume/location resume/specialties
            resume/goal resume/experience resume/education] :as resume}]
-  [:html
+  [:html {:lang "en"}
    [:head
     [:meta {:charset "UTF-8"}]
     [:title name]
-    [:style {:type "text/css"}
+    [:style
      (slurp (io/resource "style.css"))]]
    [:body
     [:article
@@ -180,7 +181,7 @@
     (->> resume
          (s/conform ::resume)
          render-resume
-         (html5 {:lang "en"})
+         (html (doctype :html5))
          (spit "index.html"))))
 
 (comment
