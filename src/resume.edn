@@ -10,10 +10,10 @@
           "JavaScript"
           "Amazon Web Services"]
          :goal
-         ["I have been designing software for more than 10 years. I designed <em>distributed systems</em> as well as <em>user interfaces</em>. My most recent experiences involved <em>Clojure</em>, <em>Datomic</em>, <em>JavaScript</em>, and <em>Amazon Web Services</em> (AWS)."
-          "My primary motivation as a software designer has always been to understand the domain of the users in order to design an environment that minimizes the breakdowns in their daily activity and empowers them by taking full advantage of the potential of the computer."
-          "I have experience with the entire process of software development, from the inception to the deployment to production and maintenance of the system. I can work independently or as part of a small team."
-          "As of January 2018, I am looking for new remote opportunities. I'm currently based in St Paul, Minnesota, but my family and I are planning to move to Tallahassee, Florida, in the summer."]
+         ["I have more than 10 years experience as a software designer. I have designed <em>distributed systems</em> as well as <em>user interfaces</em>. My most recent projects involved <em>Clojure</em>, <em>Datomic</em>, <em>JavaScript</em>, and <em>Amazon Web Services</em> (AWS)."
+          "My primary motivation as a software designer is to create products with the user in mind. Creating an environment that minimizes the breakdowns in the user's daily activities and enables the user to take full advantage of the computer's potential."
+          "I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team."
+          "As of January 2018, I am looking for new remote opportunities. I'm currently based in St Paul, Minnesota, but I will relocate to Tallahassee, Florida, in summer 2018."]
          :experience
          [#:work{:period [2017 2017]
                  :title "Head of Engineering"
@@ -100,7 +100,7 @@
                   "Designed a <em>REST-based protocol</em> to exchange campaign information between the ad manager and the ad server. Delivered a detailed documentation of the protocol. Introduced <em>RDF</em> to describe the graph-like data models of the ad campaigns. Implemented an object-oriented API in PHP to generate and navigate ad campaigns represented as RDF. Provided code examples for publishing ad campaigns from the ad manager."]}]
          :education
          [#:education{:affiliation
-                      #:affiliation{:name "ENSEEIHT"
+                      #:affiliation{:name "ENSEEIHT (France)"
                                     :url
                                     "http://www.enseeiht.fr/en/index.html"
                                     :image "enseeiht.png"}
