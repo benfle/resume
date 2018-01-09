@@ -1,0 +1,108 @@
+#:resume{:name "Benoît Fleury"
+         :tagline "Software Designer"
+         :notable-affiliations ["Cognitect" "Amazon" "Microsoft"]
+         :location "St Paul, Minnesota"
+         :specialties
+         ["Distributed Systems"
+          "Web Design"
+          "Clojure"
+          "Datomic"
+          "JavaScript"
+          "Amazon Web Services"]
+         :goal
+         ["I have been designing software for more than 10 years. I designed <em>distributed systems</em> as well as <em>user interfaces</em>. My most recent experiences involved <em>Clojure</em>, <em>Datomic</em>, <em>JavaScript</em>, and <em>Amazon Web Services</em> (AWS)."
+          "My primary motivation as a software designer has always been to understand the domain of the users in order to design an environment that minimizes the breakdowns in their daily activity and empowers them by taking full advantage of the potential of the computer."
+          "I have experience with the entire process of software development, from the inception to the deployment to production and maintenance of the system. I can work independently or as part of a small team."
+          "As of January 2018, I am looking for new remote opportunities. I'm currently based in St Paul, Minnesota, but my family and I are planning to move to Tallahassee, Florida, in the summer."]
+         :experience
+         [#:work{:period [2017 2017]
+                 :title "Head of Engineering"
+                 :affiliation
+                 #:affiliation{:name "Access Watch"
+                               :url "http://access.watch"
+                               :image "access-watch.jpg"}
+                 :projects
+                 ["Rebuilt 80% of the production system in <em>Clojure</em> and <em>Datomic</em> on AWS (<em>EC2</em>, <em>DynamoDB</em>, <em>S3</em>, <em>Elastic Beanstalk</em>). Redesigned the data model using Datomic information model. Built an auto-scalable worker environment to retrieve network information from external databases (DNS, WHOIS, DNS blacklists, Tor network...). Designed and engineered a <em>real-time analytics</em> service on top of Datomic."
+                  "Initiated the development of an <a href=\"https://github.com/access-watch/access-watch\" title=\"Access Watch\">open-source stream processing framework</a> in <em>JavaScript/node</em> for the access watch log processing agent."]}
+          #:work{:period [2013 2017]
+                 :title "Software Developer"
+                 :affiliation
+                 #:affiliation{:name "Cognitect"
+                               :url "http://cognitect.com"
+                               :image "cognitect.svg"}
+                 :projects
+                 ["As part of a team of two developers, I built the front-end and back-end of a <em>simulation testing</em> suite for one of the largest e-commerce platform in the world. The purpose of simulation testing is to (1) model the user's behavior on the website, (2) generate test scenarios against the system's endpoints, (3) run the scenarios, and (4) validate the responses and states of the system during the execution of the scenarios. The application was built in <em>Clojure</em> and <em>Datomic</em> with the <a href=\"https://github.com/Datomic/simulant\" title=\"Simulant github repository\">Simulant library</a>."
+                  "Built a real-time database replication system in <em>Clojure</em> on AWS (<em>DynamoDB</em>, <em>S3</em>) for one ot the biggest hotel chain in the United States. The service processed a constant stream of room rates and availability updates represented as XML documents. The updates were processed and stored into DynamoDB tables. All updates were logged to S3 for recovery purpose."],
+                 :recommendations
+                 [#:recommendation{:text
+                                   "Benoit and I worked closely together while at Room Key. At the time, he was a consultant to Cognitect. He impressed me enough with his knowledge and dedication that I recommended him for hire, a recommendation that was accepted to Cognitect's benefit. We subsequently worked together on a major and at times difficult project at Walmart, where his contributions continued at the highest level."
+                                   :author
+                                   "Craig Andera, Software Developer"}]}
+          #:work{:period [2012 2013]
+                 :title "Independent Software Developer"
+                 :projects
+                 ["Built the frontend and backend of a data extraction pipeline in <em>Clojure</em> and <em>PostgreSQL</em>. The crawler retrieved PDF forms from government websites. The data was extracted from the PDF using an <em>OCR library</em> and indexed in PostgreSQL. I designed a web interface to query the data set and review the daily reports."
+                  "Built a <em>naive Bayes classifier</em> in <em>Clojure</em> to recognize mobile scanned documents from their textual content. The project included the classifier as well as a set of tools to manage the training set, train the classifier, and evaluate it on new documents."
+                  "Implemented several improvements to an <em>OCR pipeline</em> of a mobile document scanning solution. I implemented the <em>Stroke Width transform algorithm</em> and integrated the <em>ZXing</em> bar code detection library."]
+                 :recommendations
+                 [#:recommendation{:text
+                                   "We hired Benoit to work on some very technically challenging projects with open-ended and ambiguously defined objectives due to the nature of the work. He jumped in and delivered outstanding results quickly and consistently, with excellent communication throughout the engagement. Benoit is a highly intelligent and very skilled software engineer, and I hope to work with him again in the future"
+                                   :author "Ryan Crum, CTO"}]}
+          #:work{:period [2011 2012]
+                 :title "Software Design Engineer"
+                 :affiliation
+                 #:affiliation{:name "Amazon"
+                               :url "http://amazon.com"
+                               :image "amazon.png"}
+                 :projects
+                 ["Initiated the engineering of the backend services to support AmazonLocal on Kindle with special offers. Built backend services in <em>Java</em> to (1) transform the daily deals into a kindle ad, (2) support the purchase workflow from the device, and (3) deliver the voucher to the device as an ebook. Built a web application to support the work of the production associates."]}
+          #:work{:period [2010 2011]
+                 :title "Program Manager"
+                 :affiliation
+                 #:affiliation{:name "Microsoft"
+                               :url "http://microsoft.com"
+                               :image "microsoft.png"}
+                 :projects
+                 ["Participated to a mobile advertising vTeam (virtual team) focused on competition and delivered a presentation during an internal summit."
+                  "Delivered a detailed <em>functional specification</em> of a high-performance, low resource usage C library for fetching and managing ads on mobile devices: Windows Mobile 6.x, iPhone and Android. The specification contained the requirements, the specification of the ad caching algorithm, and the impression and click reporting startegy with exponential backoff."
+                  "Designed the <em>threat model</em> of the mobile ad client library. The model got approved by the security team."
+                  "Designed and drove adoption of a new type of ad appropriate to mobile devices."
+                  "Wrote and drove adoption of a list of core <em>client scenarios</em> with the Bing mobile team for a mobile coupon platform. Made a proposal to the business team that has been accepted. Investigated scenarios and requirements related to billing and fraud components. Delivered a detailed functional specification of these two components."]
+                 :recommendations
+                 [#:recommendation{:text
+                                   "The success of the vteam was in direct relation to the committed time and effort Benoit provided. Further, Benoit acted as a superb representative for our team by providing insight and understanding for other groups represented by the various vteam members."
+                                   :author "Working group organizer"}]}
+          #:work{:period [2008 2011]
+                 :title "Software Design Engineer"
+                 :affiliation
+                 #:affiliation{:name "Microsoft"
+                               :url "http://microsoft.com"
+                               :image "microsoft.png"}
+                 :projects
+                 ["Participated to the development of several versions of the mobile advertising platform in <em>C#</em>, <em>.NET</em>, <em>SQLServer</em>, <em>Cosmos</em>."
+                  "Designed two versions of our <em>REST protocol</em> for mobile ad delivery. Educated my coworkers and management about the REST architectural style. Drove adoption of JSON as an alternative to XML to represent ads. The approach to the design of the protocol has further been validated by our early compliance to the API guidelines of the entire advertising group at Microsoft."
+                  "Initiated the design and engineering of an <em>object-oriented event system</em> for the mobile advertising platform. Events are fundamental in an ad delivery engine. They're used for counting logging, tracing, debugging...  The aspect-oriented design greatly helped simplifying the source code."
+                  "Based on my previous experience at ScreenTonic, I built a <em>support tool</em> to manually build queries against the ad platform. The tool was widely used among the support team to troubleshoot potential issues."]
+                 :recommendations
+                 [#:recommendation{:text
+                                   "Benoit is a talented developer with a passion for sound design, best practices, and agility. I've been impressed by his capability to handle complex end to end scenarios and come up with a neat and efficient solution."
+                                   :author "Eric Brun, Architect"}]}
+          #:work{:period [2006 2008]
+                 :title "Software Developer"
+                 :affiliation #:affiliation{:name "ScreenTonic"
+                                            :image "screentonic.jpg"
+                                            :url "https://en.wikipedia.org/wiki/ScreenTonic"}
+                 :projects
+                 ["The share of voice-based delivery algorithm we were using had disadvantages in some cases. I was asked to propose new algorithms. Wrote a <em>white paper</em> on the state of the art of ad delivery. Implemented prototypes in python to test several algorithms. Proposed a new algorithm for the ad server. The company was acquired by Microsoft before the algorithm went into production."
+                  "Engineered several features of the ad server on the LAMP stack (<em>Linux</em>, <em>Apache</em>, <em>MySQL</em>, <em>PHP</em>)."
+                  "Participated to the internal and external support activities."
+                  "Initiated the engineering of a <em>framework for integrated tests</em>. As features were added, the configuration of ad campaigns got complex and it became hard to predict the behavior of the campaigns over time. We needed a tool to communicate between the production associates and the developers. I engineered the tool and wrote the test fixtures for the existing functionalities."
+                  "Designed a <em>REST-based protocol</em> to exchange campaign information between the ad manager and the ad server. Delivered a detailed documentation of the protocol. Introduced <em>RDF</em> to describe the graph-like data models of the ad campaigns. Implemented an object-oriented API in PHP to generate and navigate ad campaigns represented as RDF. Provided code examples for publishing ad campaigns from the ad manager."]}]
+         :education
+         [#:education{:affiliation
+                      #:affiliation{:name "ENSEEIHT"
+                                    :url
+                                    "http://www.enseeiht.fr/en/index.html"
+                                    :image "enseeiht.png"}
+                      :diploma
+                      "Master in Computer Science and Applied Mathematics"}]}

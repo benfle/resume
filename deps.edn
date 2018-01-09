@@ -1,0 +1,4 @@
+{:deps
+ {org.clojure/spec.alpha {:mvn/version "0.1.143"}
+  org.clojure/data.codec {:mvn/version "0.1.1"}
+  hiccup {:mvn/version "1.0.5"}}}
