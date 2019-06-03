@@ -1,7 +1,7 @@
 #:resume{:name "Benoît Fleury"
          :tagline "Software Designer"
          :notable-affiliations ["Cognitect" "Amazon" "Microsoft"]
-         :location "St Paul, Minnesota"
+         :location "Tallahassee, Florida"
          :specialties
          ["Distributed Systems"
           "Web Design"
@@ -13,7 +13,7 @@
          ["I have more than 10 years experience as a software designer. I have designed <em>distributed systems</em> as well as <em>user interfaces</em>. My most recent projects involved <em>Clojure</em>, <em>Datomic</em>, <em>JavaScript</em>, and <em>Amazon Web Services</em> (AWS)."
           "My primary motivation as a software designer is to create products with the user in mind. Creating an environment that minimizes the breakdowns in the user's daily activities and enables the user to take full advantage of the computer's potential."
           "I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team."
-          "As of January 2018, I am looking for new remote opportunities. I'm currently based in St Paul, Minnesota, but I will relocate to Tallahassee, Florida, in summer 2018."]
+          "I am looking for new remote opportunities. I'm based in Tallahassee, Florida."]
          :experience
          [#:work{:period [2017 2017]
                  :title "Head of Engineering"
