@@ -1,28 +1,44 @@
-#:resume{:name "Benoît Fleury"
-         :tagline "Software Designer"
+#:resume{:url "http://benfle.com/resume"
+         :name "Benoît Fleury"
+         :tagline "Senior Software Engineer"
          :notable-affiliations ["Cognitect" "Amazon" "Microsoft"]
          :location "Tallahassee, Florida"
          :specialties
-         ["Distributed Systems"
-          "Web Design"
+         ["Data-Intensive Applications"
           "Clojure"
           "Datomic"
           "JavaScript"
           "Amazon Web Services"]
          :goal
-         ["I have more than 10 years experience as a software designer. I have designed <em>distributed systems</em> as well as <em>user interfaces</em>. My most recent projects involved <em>Clojure</em>, <em>Datomic</em>, <em>JavaScript</em>, and <em>Amazon Web Services</em> (AWS)."
-          "My primary motivation as a software designer is to create products with the user in mind. Creating an environment that minimizes the breakdowns in the user's daily activities and enables the user to take full advantage of the computer's potential."
+         ["I have more than 10 years experience as a software engineer. I have designed <em>data-intensive systems</em> as well as <em>user interfaces</em>."
+          "My primary motivation as a software engineer is to create products with the user in mind. Creating an environment that minimizes the breakdowns in the user's daily activities and enables the user to take full advantage of the computer's potential."
           "I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team."
-          "I am looking for new remote opportunities. I'm based in Tallahassee, Florida."]
+          "My most recent projects involved <em>Clojure</em>, <em>Datomic</em>, <em>JavaScript</em>, and <em>Amazon Web Services</em> (AWS)."
+          "I am looking for a remote opportunity with an organization that values its software and the people using it. I'm based in Tallahassee, Florida."]
          :experience
-         [#:work{:period [2017 2017]
+         [#:work{:period [2018 2019]
+                 :title "Senior Software Engineer"
+                 :affiliation
+                 #:affiliation{:name "Centriq"
+                               :url "https://www.mycentriq.com"
+                               :image "centriq.png"}
+                 :projects
+                 ["Designed and engineered a <em>data ingestion pipeline</em> in Clojure from heterogeneous third-party data sources to a Datomic database."
+                  "Helped complete the migration of the production system from Heroku to <em>AWS</em> (ECS, CloudFormation, SSM). Implemented a tool in Clojure to automate the deployment of the entire system."
+                  "Created a generic <em>event system</em> (inspired by Cognitect Ion's cast library). Integrated the event system with Cloudwatch for complete <em>monitoring</em> of our production system."
+                  "Designed and engineered an uniform user notification system supporting various channels: transactional email, mobile push, slack, digest email."
+                  "Shipped several key features of the platform that were very well received by our users: notification and digest emails, maintenance tasks and reminders, mobile push notifications, multi-tenancy support for the platform, new partner API."]}
+          #:work{:period [2017 2018]
                  :title "Head of Engineering"
                  :affiliation
                  #:affiliation{:name "Access Watch"
                                :url "http://access.watch"
                                :image "access-watch.jpg"}
                  :projects
-                 ["Rebuilt 80% of the production system in <em>Clojure</em> and <em>Datomic</em> on AWS (<em>EC2</em>, <em>DynamoDB</em>, <em>S3</em>, <em>Elastic Beanstalk</em>). Redesigned the data model using Datomic information model. Built an auto-scalable worker environment to retrieve network information from external databases (DNS, WHOIS, DNS blacklists, Tor network...). Designed and engineered a <em>real-time analytics</em> service on top of Datomic."
+                 ["Designed and engineered several core data-intensive services in <em>Clojure</em> and <em>Datomic</em> on AWS (<em>EC2</em>, <em>DynamoDB</em>, <em>S3</em>, <em>Elastic Beanstalk</em>)."
+                  "Redesigned the data model using Datomic information model."
+                  "Built an auto-scalable worker environment to retrieve network information from external databases (DNS, WHOIS, DNS blacklists, Tor network...)."
+                  "Designed and engineered a <em>real-time analytics</em> service on top of Datomic."
                   "Initiated the development of an <a href=\"https://github.com/access-watch/access-watch\" title=\"Access Watch\">open-source stream processing framework</a> in <em>JavaScript/node</em> for the access watch log processing agent."]}
           #:work{:period [2013 2017]
                  :title "Software Developer"
@@ -105,4 +121,8 @@
                                     "http://www.enseeiht.fr/en/index.html"
                                     :image "enseeiht.png"}
                       :diploma
-                      "Master in Computer Science and Applied Mathematics"}]}
+                      "Master in Computer Science and Applied Mathematics (Diplôme d'Ingénieur)"}]
+         :interests
+         ["Avid reader"
+          "Piano playing (started in 2015)"
+          "Oil painting (started in 2018)"]}

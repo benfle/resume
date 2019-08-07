@@ -41,7 +41,7 @@ section {
     margin-top: 20px;
 }
 
-section.work, section.education {
+section.work, section.education, section.interests {
     display: flex;
     margin: 0 0 20px 0;
 }
@@ -82,11 +82,11 @@ div.image {
 
 div.image img {
     width: 90px;
-    margin: 0 10px 0 0;
 }
 
 div.text {
     flex: 1 700px;
+    padding-left: 10px;
 }
 
 div.text li {
@@ -107,7 +107,7 @@ div.columns {
 
 ul.projects {
     padding: 0 10px 0 0;
-    flex: 1;
+    flex: 2;
 }
 
 ul.recommendations {

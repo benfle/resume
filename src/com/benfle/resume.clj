@@ -15,11 +15,9 @@
                                       :recommendation/author]))
 (s/def :recommendation/text string?)
 (s/def :recommendation/author string?)
-
 (s/def ::affiliation (s/keys :req [:affiliation/name
                                    :affiliation/url
                                    :affiliation/image]))
-
 (s/def ::work (s/keys :req [:work/period
                             :work/title
                             :work/projects]
@@ -31,20 +29,21 @@
 (s/def :work/affiliation ::affiliation)
 (s/def :work/projects (s/coll-of string?))
 (s/def :work/recommendations (s/coll-of ::recommendation))
-
 (s/def ::education (s/keys :req [:education/affiliation
                                  :education/diploma]))
 (s/def :education/affiliation ::affiliation)
 (s/def :education/diploma string?)
-
-(s/def ::resume (s/keys :req [:resume/name
+(s/def ::interest string?)
+(s/def ::resume (s/keys :req [:resume/url
+                              :resume/name
                               :resume/tagline
                               :resume/notable-affiliations
                               :resume/location
                               :resume/specialties
                               :resume/goal
                               :resume/experience
-                              :resume/education]))
+                              :resume/education
+                              :resume/interests]))
 (s/def :resume/name string?)
 (s/def :resume/tagline string?)
 (s/def :resume/notable-affiliations (s/coll-of string?))
@@ -53,6 +52,7 @@
 (s/def :resume/goal (s/coll-of string?))
 (s/def :resume/experience (s/coll-of ::work))
 (s/def :resume/education (s/coll-of ::education))
+(s/def :resume/interests (s/coll-of ::interest))
 
 ;; Publishing
 
@@ -135,8 +135,16 @@
 
 (defn render-resume
   "Publish the resume as HTML"
-  [{:keys [resume/name resume/tagline resume/notable-affiliations resume/location resume/specialties
-           resume/goal resume/experience resume/education] :as resume}]
+  [{:keys [resume/url
+           resume/name
+           resume/tagline
+           resume/notable-affiliations
+           resume/location
+           resume/specialties
+           resume/goal
+           resume/experience
+           resume/education
+           resume/interests] :as resume}]
   [:html {:lang "en"}
    [:head
     [:meta {:charset "UTF-8"}]
@@ -161,9 +169,19 @@
      [:section
       [:h2 "Education"]
       (map render-education education)]
+     [:section
+      [:h2 "Interests"]
+      [:section.interests
+       [:div.image]
+       [:div.text
+        [:ul
+         (map (fn [s]
+                [:li s])
+              interests)]]]]
      [:footer
-      [:p (str "Last updated: " (.format (java.time.LocalDate/now)
-                                         (java.time.format.DateTimeFormatter/ofPattern "MMMM YYYY")))]]
+      [:p (str "Version: " (.format (java.time.LocalDate/now)
+                                    (java.time.format.DateTimeFormatter/ofPattern "MMMM YYYY")))]
+      [:p (str "Latest version at: " url)]]
      [:script
       "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
