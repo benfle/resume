@@ -10,7 +10,7 @@
           "I am looking for a remote opportunity."]
          :experience
          [#:work{:period [2018 2019]
-                 :title "Senior Software Engineer"
+                 :title "Senior Software Designer"
                  :affiliation
                  #:affiliation{:name "Centriq"
                                :url "https://www.mycentriq.com"
