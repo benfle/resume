@@ -39,7 +39,6 @@
                               :resume/tagline
                               :resume/notable-affiliations
                               :resume/location
-                              :resume/specialties
                               :resume/goal
                               :resume/experience
                               :resume/education
@@ -48,7 +47,6 @@
 (s/def :resume/tagline string?)
 (s/def :resume/notable-affiliations (s/coll-of string?))
 (s/def :resume/location string?)
-(s/def :resume/specialties (s/coll-of string?))
 (s/def :resume/goal (s/coll-of string?))
 (s/def :resume/experience (s/coll-of ::work))
 (s/def :resume/education (s/coll-of ::education))
@@ -140,7 +138,6 @@
            resume/tagline
            resume/notable-affiliations
            resume/location
-           resume/specialties
            resume/goal
            resume/experience
            resume/education
@@ -156,10 +153,9 @@
      [:header
       [:h1 name]
       [:p.tagline tagline]
-      [:p.notable-affiliations  (str/join " • " notable-affiliations)]
+      [:p.notable-affiliations (str/join " • " notable-affiliations)]
       [:p.location
-       location]
-      [:p.specialties (str "Specialties: " (str/join ", " specialties))]]
+       location]]
      [:section
       [:h2 "Goal"]
       (map #(vector :p %) goal)]

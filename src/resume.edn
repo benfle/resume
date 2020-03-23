@@ -1,20 +1,13 @@
 #:resume{:url "http://benfle.com/resume"
          :name "Benoît Fleury"
-         :tagline "Senior Software Engineer"
+         :tagline "Software System Designer"
          :notable-affiliations ["Cognitect" "Amazon" "Microsoft"]
          :location "Tallahassee, Florida"
-         :specialties
-         ["Data-Intensive Applications"
-          "Clojure"
-          "Datomic"
-          "JavaScript"
-          "Amazon Web Services"]
          :goal
-         ["I have more than 10 years experience as a software engineer. I have designed <em>data-intensive systems</em> as well as <em>user interfaces</em>."
-          "My primary motivation as a software engineer is to create products with the user in mind. Creating an environment that minimizes the breakdowns in the user's daily activities and enables the user to take full advantage of the computer's potential."
-          "I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team."
+         ["As a software designer my primary motivation is to create products with the users in mind. Creating an environment that minimizes the breakdowns in the users' daily activities and enables them to take full advantage of the computer's potential."
+          "I have more than 10 years experience designing and engineering software. I have designed <em>data-intensive systems</em> as well as <em>user interfaces</em>. I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team."
           "My most recent projects involved <em>Clojure</em>, <em>Datomic</em>, <em>JavaScript</em>, and <em>Amazon Web Services</em> (AWS)."
-          "I am looking for a remote opportunity with an organization that values its software and the people using it. I'm based in Tallahassee, Florida."]
+          "I am looking for a remote opportunity."]
          :experience
          [#:work{:period [2018 2019]
                  :title "Senior Software Engineer"
