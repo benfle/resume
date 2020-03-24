@@ -1,16 +1,15 @@
 #:resume{:url "http://benfle.com/resume"
          :name "Benoît Fleury"
-         :tagline "Software System Designer"
+         :tagline "Senior Software Engineer"
          :notable-affiliations ["Cognitect" "Amazon" "Microsoft"]
          :location "Tallahassee, Florida"
          :goal
-         ["As a software designer my primary motivation is to create products with the users in mind. Creating an environment that minimizes the breakdowns in the users' daily activities and enables them to take full advantage of the computer's potential."
-          "I have 15 years experience designing and engineering software. I have designed <em>data-intensive systems</em> as well as <em>user interfaces</em>. I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team."
+         ["I have 15 years experience designing and engineering software. I have designed <em>data-intensive systems</em> as well as <em>user interfaces</em>. I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team."
           "My most recent projects involved <em>Clojure</em>, <em>Datomic</em>, <em>JavaScript</em>, and <em>Amazon Web Services</em> (AWS)."
           "I am looking for a remote opportunity."]
          :experience
          [#:work{:period [2018 2019]
-                 :title "Senior Software Designer"
+                 :title "Senior Software Engineer"
                  :affiliation
                  #:affiliation{:name "Centriq"
                                :url "https://www.mycentriq.com"
@@ -34,7 +33,7 @@
                   "Designed and engineered a <em>real-time analytics</em> service on top of Datomic."
                   "Initiated the development of an <a href=\"https://github.com/access-watch/access-watch\" title=\"Access Watch\">open-source stream processing framework</a> in <em>JavaScript/node</em> for the access watch log processing agent."]}
           #:work{:period [2013 2017]
-                 :title "Software Developer"
+                 :title "Software Engineer"
                  :affiliation
                  #:affiliation{:name "Cognitect"
                                :url "http://cognitect.com"
@@ -48,7 +47,7 @@
                                    :author
                                    "Craig Andera, Software Developer"}]}
           #:work{:period [2012 2013]
-                 :title "Independent Software Developer"
+                 :title "Independent Software Engineer"
                  :projects
                  ["Built the frontend and backend of a data extraction pipeline in <em>Clojure</em> and <em>PostgreSQL</em>. The crawler retrieved PDF forms from government websites. The data was extracted from the PDF using an <em>OCR library</em> and indexed in PostgreSQL. I designed a web interface to query the data set and review the daily reports."
                   "Built a <em>naive Bayes classifier</em> in <em>Clojure</em> to recognize mobile scanned documents from their textual content. The project included the classifier as well as a set of tools to manage the training set, train the classifier, and evaluate it on new documents."
@@ -97,7 +96,7 @@
                                    "Benoit is a talented developer with a passion for sound design, best practices, and agility. I've been impressed by his capability to handle complex end to end scenarios and come up with a neat and efficient solution."
                                    :author "Eric Brun, Architect"}]}
           #:work{:period [2006 2008]
-                 :title "Software Developer"
+                 :title "Software Engineer"
                  :affiliation #:affiliation{:name "ScreenTonic"
                                             :image "screentonic.jpg"
                                             :url "https://en.wikipedia.org/wiki/ScreenTonic"}
