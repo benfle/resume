@@ -23,8 +23,8 @@
                             :work/projects]
                       :opt [:work/affiliation
                             :work/recommendations]))
-(s/def :work/period (s/cat :start pos-int?
-                           :end pos-int?))
+(s/def :work/period (s/cat :start string?
+                           :end string?))
 (s/def :work/title string?)
 (s/def :work/affiliation ::affiliation)
 (s/def :work/projects (s/coll-of string?))
@@ -39,7 +39,7 @@
                               :resume/tagline
                               :resume/notable-affiliations
                               :resume/location
-                              :resume/goal
+                              :resume/summary
                               :resume/experience
                               :resume/education
                               :resume/interests]))
@@ -47,7 +47,7 @@
 (s/def :resume/tagline string?)
 (s/def :resume/notable-affiliations (s/coll-of string?))
 (s/def :resume/location string?)
-(s/def :resume/goal (s/coll-of string?))
+(s/def :resume/summary (s/coll-of string?))
 (s/def :resume/experience (s/coll-of ::work))
 (s/def :resume/education (s/coll-of ::education))
 (s/def :resume/interests (s/coll-of ::interest))
@@ -79,36 +79,25 @@
   [{:keys [work/period work/title work/projects work/affiliation work/recommendations]}]
   (let [{:keys [start end]} period
         {:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
-
     [:section.work
-
      [:div.image
       (when image
         [:img {:src (inline-image (str "images/" image))
                :alt name}])]
-
      [:div.text
-
       [:h3 title]
-
       (when name
         [:p.affiliation
          (if url
            [:a {:href url} name]
            name)])
-
       [:p.period
-       (if (= start end)
-         start
-         (str start " — " end))]
-
+       (str start " — " end)]
       [:div.columns
-
        (into [:ul.projects
               (map (fn [description]
                      [:li.project [:p description]])
                    projects)])
-
        (into [:ul.recommendations]
              (map (fn [{:keys [recommendation/text recommendation/author]}]
                     [:li
@@ -138,7 +127,7 @@
            resume/tagline
            resume/notable-affiliations
            resume/location
-           resume/goal
+           resume/summary
            resume/experience
            resume/education
            resume/interests] :as resume}]
@@ -157,8 +146,8 @@
       [:p.location
        location]]
      [:section
-      [:h2 "Goal"]
-      (map #(vector :p %) goal)]
+      [:h2 "Summary"]
+      (map #(vector :p %) summary)]
      [:section
       [:h2 "Experience"]
       (map render-work experience)]
