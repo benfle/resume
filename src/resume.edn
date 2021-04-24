@@ -6,7 +6,7 @@
          :summary
          ["I design and engineer software backend systems at any scale. I am detail-oriented and passionate about software quality. It is as important for me to build the right product as it is to build the product right. I believe that refactoring is an essential part of the software design process as learning happens at all stages."
           "My most recent projects include Clojure, Datomic, JavaScript, and Amazon Web Services. While I enjoy working with good tools, I believe that sound engineering principles and the culture of the organization have a bigger impact on the success of a project."
-          "In the last 15 years, I have worked with diverse software organizations. Starting my career at large corporations (Microsft, Amazon), I shifted to software consulting (Cognitect), and most recently startups."
+          "In the last 15 years, I have worked with diverse software organizations. Starting my career at large corporations (Microsoft, Amazon), I shifted to software consulting (Cognitect), and most recently startups."
           "I am looking for remote opportunities only. "]
          :experience
          [#:work{:period ["Jul 2020" "now"]
