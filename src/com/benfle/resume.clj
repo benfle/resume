@@ -33,7 +33,6 @@
                                  :education/diploma]))
 (s/def :education/affiliation ::affiliation)
 (s/def :education/diploma string?)
-(s/def ::interest string?)
 (s/def ::resume (s/keys :req [:resume/url
                               :resume/name
                               :resume/tagline
@@ -41,8 +40,7 @@
                               :resume/location
                               :resume/summary
                               :resume/experience
-                              :resume/education
-                              :resume/interests]))
+                              :resume/education]))
 (s/def :resume/name string?)
 (s/def :resume/tagline string?)
 (s/def :resume/notable-affiliations (s/coll-of string?))
@@ -50,7 +48,6 @@
 (s/def :resume/summary (s/coll-of string?))
 (s/def :resume/experience (s/coll-of ::work))
 (s/def :resume/education (s/coll-of ::education))
-(s/def :resume/interests (s/coll-of ::interest))
 
 ;; Publishing
 
@@ -79,7 +76,7 @@
   [{:keys [work/period work/title work/projects work/affiliation work/recommendations]}]
   (let [{:keys [start end]} period
         {:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
-    [:section.work
+    [:section.subsection
      [:div.image
       (when image
         [:img {:src (inline-image (str "images/" image))
@@ -93,22 +90,15 @@
            name)])
       [:p.period
        (str start " — " end)]
-      [:div.columns
-       (into [:ul.projects
-              (map (fn [description]
-                     [:li.project [:p description]])
-                   projects)])
-       (into [:ul.recommendations]
-             (map (fn [{:keys [recommendation/text recommendation/author]}]
-                    [:li
-                     [:p text]
-                     [:p (str " — " author)]])
-                  recommendations))]]]))
+      [:ul.projects
+       (map (fn [description]
+              [:li.project [:p description]])
+            projects)]]]))
 
 (defn render-education
   [{:keys [education/affiliation education/diploma]}]
   (let [{:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
-    [:section.education
+    [:section.subsection
      [:div.image
       (when image
         [:img {:src (inline-image (str "images/" image))
@@ -129,8 +119,7 @@
            resume/location
            resume/summary
            resume/experience
-           resume/education
-           resume/interests] :as resume}]
+           resume/education] :as resume}]
   [:html {:lang "en"}
    [:head
     [:meta {:charset "UTF-8"}]
@@ -154,15 +143,6 @@
      [:section
       [:h2 "Education"]
       (map render-education education)]
-     [:section
-      [:h2 "Interests"]
-      [:section.interests
-       [:div.image]
-       [:div.text
-        [:ul
-         (map (fn [s]
-                [:li s])
-              interests)]]]]
      [:footer
       [:p (str "Version: " (.format (java.time.LocalDate/now)
                                     (java.time.format.DateTimeFormatter/ofPattern "MMMM YYYY")))]

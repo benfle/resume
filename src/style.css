@@ -1,128 +1,118 @@
 * { margin: 0; padding: 0; }
 
 body {
-    background: white;
-    font: 14px/20px helvetica, sans-serif;
-    color: #666;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  background: white;
+  font: 14px/18px helvetica, sans-serif;
+  color: #555;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 article {
-    width: 800px;
+  width: 800px;
 }
 
 /** header **/
 
 header {
-    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    letter-spacing: 1px;
-    color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 1px;
+  color: #333;
 }
 
 header p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 h1 {
-    font-weight: normal;
-    font-size: 25px;
+  font-weight: normal;
+  font-size: 25px;
 }
 
 p.tagline {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+  font-size: 1.2em;
+  margin-bottom: 15px;
 }
 
 /** sections **/
 
 section {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-section.work, section.education, section.interests {
-    display: flex;
-    margin: 0 0 20px 0;
+section.subsection {
+  display: flex;
+  margin: 0 0 20px 0;
+  page-break-inside: avoid;
 }
 
 h2 {
-    font-weight: 200;
-    color: #999;
-    border-bottom: solid 1px #999;
-    margin-bottom: 10px;
+  font-weight: 200;
+  color: #999;
+  border-bottom: solid 1px #999;
+  margin-bottom: 10px;
 }
 
 h3 {
-    color: #333;
-    font-weight: normal;
+  color: #333;
+  font-weight: normal;
 }
 
 p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 em {
-    font-style: normal;
-    color: #f00;
+  font-style: normal;
+  color: #f00;
 }
 
 a {
-    text-decoration: none;
-    color: #666;
+  color: #666;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 div.image {
-    flex: 1 100px;
+  flex: 1 100px;
 }
 
 div.image img {
-    width: 90px;
+  width: 90px;
 }
 
 div.text {
-    flex: 1 700px;
-    padding-left: 10px;
+  flex: 1 700px;
+  padding-left: 10px;
 }
 
 div.text li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 p.affiliation, p.period {
-    margin: 0;
+  margin: 0;
 }
 
 p.period {
-    color: #aaa;
+  color: #aaa;
 }
 
 div.columns {
-    display: flex;
+  display: flex;
 }
 
 ul.projects {
-    padding: 0 10px 0 0;
-    flex: 2;
-}
-
-ul.recommendations {
-    padding: 0 0 0 10px;
-    flex: 1;
-}
-
-ul.recommendations {
-    color: #aaa;
-    font-style: italic;
+  padding: 0 10px 0 0;
+  flex: 2;
 }
 
 /** footer **/
 
 footer {
-    margin-top: 25px;
-    color: #aaa;
+  margin-top: 25px;
+  color: #aaa;
 }
