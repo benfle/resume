@@ -17,9 +17,10 @@
                                :url "https://www.dividendfinance.com/"
                                :image "dividend.png"}
                  :projects
-                 ["Designed and engineered a webhook system as well as a new core abstraction of the platform. Participated to the design and development of several key features of the backend and frontend systems. Migrated a major subsystem out of SalesForce."
-                  "Improved the observability of the system by migrating to structured logging and engineering an extensible library to take care of all our monitoring needs."
-                  "Initiated several documentation efforts (functional and technical)."]}
+                 ["Shipped several key features of the backend and frontend (Clojure/PostgreSQL)."
+                  "Designed and engineered a webhook system and its API."
+                  "Improved the observability of the system by migrating to structured logging, developing a library to take care of all our monitoring needs, and implementing the frontend and backend of an audit trail."
+                  "Initiated several documentation efforts, functional and technical."]}
           #:work{:period ["Apr 2018" "Apr 2020"]
                  :title "Senior Software Engineer"
                  :affiliation
@@ -27,10 +28,10 @@
                                :url "https://www.mycentriq.com"
                                :image "centriq.png"}
                  :projects
-                 ["Designed and engineered an uniform user notification system supporting various channels (transactional email, mobile push, slack, digest email)."
-                  "Shipped several key features of the platform that were very well received by our users: notification and digest emails, maintenance tasks and reminders, mobile push notifications, multi-tenancy support for the platform, new partner REST API."
-                  "Designed and engineered a data ingestion pipeline in Clojure from heterogeneous third-party data sources to a Datomic database."
-                  "Created a generic event system for the platform and integrated it with Cloudwatch for complete monitoring of our production system. Automated our deployment to AWS."]}
+                 ["Shipped several key features of the platform that were very well received by our users: notification and digest emails, maintenance tasks and reminders, mobile push notifications, multi-tenancy support for the platform, new partner REST API."
+                  "Designed and engineered a uniform user notification system supporting various channels (transactional and digest emails, mobile push, slack)."
+                  "Built a data ingestion pipeline in Clojure from heterogeneous third-party data sources to a Datomic database."
+                  "Created a generic event system with a decoupled frontend/backend and integrated it with Cloudwatch for complete monitoring of our production system. Automated our deployment to AWS."]}
           #:work{:period ["Mar 2017" "Jan 2018"]
                  :title "Head of Engineering"
                  :affiliation
