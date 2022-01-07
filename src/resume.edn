@@ -1,16 +1,24 @@
 #:resume{:url "http://benfle.com/resume"
          :name "Benoît Fleury"
          :tagline "Software Engineer"
-         :notable-affiliations ["Cognitect" "Amazon" "Microsoft"]
+         :notable-affiliations ["Stripe" "Cognitect" "Amazon" "Microsoft"]
          :location "Tallahassee, Florida"
          :summary
-         ["I design and engineer software backend systems at any scale."
+         ["I design and engineer software backend systems."
           "I am detail-oriented and passionate about software quality. It is as important to me to build the right product as it is to build the product right. I believe that refactoring is an essential part of the software design process as learning happens at all stages."
           "While I enjoy working with good tools, I believe that sound engineering principles and the culture of the organization have a bigger impact on the success of a project."
           "In the last 15 years, I have worked with diverse software organizations. Starting my career at large corporations (Microsoft, Amazon), I shifted to software consulting (Cognitect), and most recently startups."
-          "I am looking for remote opportunities only. "]
+          "I am looking for remote opportunities only."]
          :experience
-         [#:work{:period ["Jul 2020" "now"]
+         [#:work{:period ["Jan 2022" "Now"]
+                 :title "Senior Software Engineer"
+                 :affiliation
+                 #:affiliation{:name "Stripe"
+                               :url "https://stripe.com/"
+                               :image "stripe.png"}
+                 :projects
+                 ["Working on the payment methods API."]}
+          #:work{:period ["Jul 2020" "Nov 2021"]
                  :title "Software Engineering Lead"
                  :affiliation
                  #:affiliation{:name "Dividend Finance"
