@@ -11,7 +11,7 @@
           "I am looking for remote opportunities only."]
          :experience
          [#:work{:period ["Jan 2022" "Now"]
-                 :title "Senior Software Engineer"
+                 :title "Software Engineer"
                  :affiliation
                  #:affiliation{:name "Stripe"
                                :url "https://stripe.com/"
