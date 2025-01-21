@@ -11,15 +11,20 @@
           "I am looking for remote opportunities only."]
          :experience
          [#:work{:period ["Jan 2022" "Now"]
-                 :title "Software Engineer"
+                 :title "Senior Software Engineer"
                  :affiliation
                  #:affiliation{:name "Stripe"
                                :url "https://stripe.com/"
                                :image "stripe.png"}
                  :projects
-                 ["Working on the payment methods API."]}
+                 ["Participated to the design, architecture, and implementation of the PaymentRecords API, Stripe's new read surface for payments decoupled from any payment instruction API."
+                  "Scoped and designed CustomPaymentMethods to enable Stripe users to bring their own PaymentMethods to different Stripe products like Billing and Stripe Elements."
+                  "Scoped and designed PaymentMethod sharing to enable large enterprises users to share PaymentMethods across their business units."
+                  "Reviewed and approved a dozen of changes to the Stripe's API as part of the API review team."
+                  "Mentored several juniors engineers formally and informally during design pairing sessions."
+                  "Implemented several features and fixed bugs in the PaymentMethods APIs, in Ruby and Java."]}
           #:work{:period ["Jul 2020" "Nov 2021"]
-                 :title "Software Engineering Lead"
+                 :title "Technical Lead"
                  :affiliation
                  #:affiliation{:name "Dividend Finance"
                                :url "https://www.dividendfinance.com/"
@@ -58,12 +63,7 @@
                                :image "cognitect.svg"}
                  :projects
                  ["As part of a team of two developers, I built the front-end and back-end of a simulation testing suite for one of the largest e-commerce platform in the world. The application was built in Clojure and Datomic with the <a href=\"https://github.com/Datomic/simulant\" title=\"Simulant github repository\">Simulant library</a>."
-                  "Built a real-time database replication system in Clojure on AWS (DynamoDB, S3) for one of the biggest hotel chain in the United States. The service processed a constant stream of room rates and availability updates represented as XML documents. The updates were processed and stored into DynamoDB tables. All updates were logged to S3 for recovery purpose."],
-                 :recommendations
-                 [#:recommendation{:text
-                                   "Benoit and I worked closely together while at Room Key. At the time, he was a consultant to Cognitect. He impressed me enough with his knowledge and dedication that I recommended him for hire, a recommendation that was accepted to Cognitect's benefit. We subsequently worked together on a major and at times difficult project at Walmart, where his contributions continued at the highest level."
-                                   :author
-                                   "Craig Andera, Software Developer"}]}
+                  "Built a real-time database replication system in Clojure on AWS (DynamoDB, S3) for one of the biggest hotel chain in the United States. The service processed a constant stream of room rates and availability updates represented as XML documents. The updates were processed and stored into DynamoDB tables. All updates were logged to S3 for recovery purpose."]}
           #:work{:period ["May 2011" "May 2012"]
                  :title "Software Design Engineer"
                  :affiliation
@@ -83,11 +83,7 @@
                  ["Delivered a detailed functional specification of a high-performance, low resource usage C library for fetching and managing ads on mobile devices: Windows Mobile 6.x, iPhone and Android."
                   "Designed and drove adoption of a new type of ad appropriate to mobile devices."
                   "Wrote and drove adoption of a list of core client scenarios with the Bing mobile team for a mobile coupon platform. Made a proposal to the business team that has been accepted."
-                  "Investigated scenarios and requirements related to billing and fraud components. Delivered a detailed functional specification of these two components."]
-                 :recommendations
-                 [#:recommendation{:text
-                                   "The success of the vteam was in direct relation to the committed time and effort Benoit provided. Further, Benoit acted as a superb representative for our team by providing insight and understanding for other groups represented by the various vteam members."
-                                   :author "Working group organizer"}]}
+                  "Investigated scenarios and requirements related to billing and fraud components. Delivered a detailed functional specification of these two components."]}
           #:work{:period ["Nov 2008" "Apr 2010"]
                  :title "Software Design Engineer"
                  :affiliation
@@ -97,11 +93,7 @@
                  :projects
                  ["Participated to the development of several versions of the mobile advertising platform in C#, .NET, SQLServer, Cosmos."
                   "Designed two versions of our REST protocol for mobile ad delivery."
-                  "Built a support tool to allow users to directly query the ad platform. The tool was widely used among the support team to troubleshoot potential issues."]
-                 :recommendations
-                 [#:recommendation{:text
-                                   "Benoit is a talented developer with a passion for sound design, best practices, and agility. I've been impressed by his capability to handle complex end to end scenarios and come up with a neat and efficient solution."
-                                   :author "Eric Brun, Architect"}]}
+                  "Built a support tool to allow users to directly query the ad platform. The tool was widely used among the support team to troubleshoot potential issues."]}
           #:work{:period ["Jul 2006" "Oct 2008"]
                  :title "Software Engineer"
                  :affiliation #:affiliation{:name "ScreenTonic"
