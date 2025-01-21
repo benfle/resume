@@ -17,11 +17,11 @@
                                :url "https://stripe.com/"
                                :image "stripe.png"}
                  :projects
-                 ["Participated to the design, architecture, and implementation of a new PaymentRecords abstraction, Stripe's new payment read surface decoupled from any payment instruction API."
-                  "Scoped and designed CustomPaymentMethods to enable Stripe users to bring their own PaymentMethods to different Stripe products like Billing and Stripe Elements."
+                 ["Participated to the design, architecture, and implementation of the PaymentRecords API, Stripe's new payment read surface decoupled from any payment write surface."
+                  "Scoped and designed CustomPaymentMethods to enable Stripe users to bring their own payment methods to different Stripe products like Billing and Stripe Elements."
                   "Scoped and designed PaymentMethod sharing to enable large enterprises users to share PaymentMethods across their business units."
-                  "Reviewed and approved a dozen of changes to the Stripe's API as part of the API review team."
-                  "Mentored several juniors engineers formally and informally during design pairing sessions."
+                  "Reviewed and approved a dozen of changes to the Stripe API as part of the API review team."
+                  "Mentored several junior engineers formally and informally during design pairing sessions."
                   "Implemented several features and fixed bugs in the PaymentMethods APIs, in Ruby and Java."]}
           #:work{:period ["Jul 2020" "Nov 2021"]
                  :title "Technical Lead"
