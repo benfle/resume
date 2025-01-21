@@ -77,11 +77,11 @@
   (let [{:keys [start end]} period
         {:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
     [:section.subsection
-     [:div.image
+     [:div.left
       (when image
         [:img {:src (inline-image (str "images/" image))
                :alt name}])]
-     [:div.text
+     [:div.right
       [:h3 title]
       (when name
         [:p.affiliation
@@ -99,11 +99,11 @@
   [{:keys [education/affiliation education/diploma]}]
   (let [{:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
     [:section.subsection
-     [:div.image
+     [:div.left
       (when image
         [:img {:src (inline-image (str "images/" image))
                :alt name}])]
-     [:div.text
+     [:div.right
       [:h3
        (if url
          [:a {:href url} name]
@@ -138,7 +138,10 @@
        location]]
      [:section
       [:h2 "Summary"]
-      (map #(vector :p %) summary)]
+      [:section.subsection
+       [:div.left]
+       [:div.right
+        (map #(vector :p %) summary)]]]
      [:section
       [:h2 "Experience"]
       (map render-work experience)]

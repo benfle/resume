@@ -4,9 +4,9 @@
          :notable-affiliations ["Stripe" "Cognitect"]
          :location "Tallahassee, Florida"
          :summary
-         ["I solve problems with finely crafted software, preferrably in Clojure/Datomic."
-          "I am comfortable dealing with ambiguity. I enjoy finding the intersection between business and technical opportunities."
-          "I am detail-oriented and passionate about software quality because it is the easiest way to successfully maintain software in the long term."
+         ["I solve problems with finely crafted software, preferably in <a href=\"https://clojure.org/\">Clojure</a> and <a href=\"https://www.datomic.com/\">Datomic</a>."
+          "I am comfortable dealing with ambiguity. I enjoy finding the intersection between business opportunities and technical opportunities."
+          "I am detail-oriented and passionate about software quality. It is the easiest way to maintain software in the long term."
           "I have experience leading a small engineering team and mentoring junior engineers."
           "I have been working remotely for 15+ years and will consider remote opportunities only."]
          :experience
@@ -17,7 +17,7 @@
                                :url "https://stripe.com/"
                                :image "stripe.png"}
                  :projects
-                 ["Participated to the design, architecture, and implementation of the PaymentRecords API, Stripe's new read surface for payments decoupled from any payment instruction API."
+                 ["Participated to the design, architecture, and implementation of a new PaymentRecords abstraction, Stripe's new payment read surface decoupled from any payment instruction API."
                   "Scoped and designed CustomPaymentMethods to enable Stripe users to bring their own PaymentMethods to different Stripe products like Billing and Stripe Elements."
                   "Scoped and designed PaymentMethod sharing to enable large enterprises users to share PaymentMethods across their business units."
                   "Reviewed and approved a dozen of changes to the Stripe's API as part of the API review team."

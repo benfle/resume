@@ -76,20 +76,20 @@ a:hover {
   text-decoration: underline;
 }
 
-div.image {
+div.left {
   flex: 1 100px;
 }
 
-div.image img {
+div.left img {
   width: 90px;
 }
 
-div.text {
+div.right {
   flex: 1 700px;
   padding-left: 10px;
 }
 
-div.text li {
+div.right li {
   list-style-type: none;
 }
 
