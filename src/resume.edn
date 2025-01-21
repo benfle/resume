@@ -1,6 +1,6 @@
 #:resume{:url "http://benfle.com/resume"
          :name "Benoît Fleury"
-         :tagline "Senior Software Engineer / Tech Lead"
+         :tagline "Senior Software Engineer / Technical Lead"
          :notable-affiliations ["Stripe" "Cognitect"]
          :location "Tallahassee, Florida"
          :summary
