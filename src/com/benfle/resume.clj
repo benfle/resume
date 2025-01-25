@@ -35,13 +35,16 @@
 (s/def :education/diploma string?)
 (s/def ::resume (s/keys :req [:resume/url
                               :resume/name
+                              :resume/email
+                              :resume/phone
                               :resume/tagline
                               :resume/notable-affiliations
-                              :resume/location
                               :resume/summary
                               :resume/experience
                               :resume/education]))
 (s/def :resume/name string?)
+(s/def :resume/email string?)
+(s/def :resume/phone string?)
 (s/def :resume/tagline string?)
 (s/def :resume/notable-affiliations (s/coll-of string?))
 (s/def :resume/location string?)
@@ -82,14 +85,16 @@
         [:img {:src (inline-image (str "images/" image))
                :alt name}])]
      [:div.right
-      [:h3 title]
-      (when name
-        [:p.affiliation
-         (if url
-           [:a {:href url} name]
-           name)])
-      [:p.period
-       (str start " — " end)]
+      [:h3
+       [:span.affiliation
+        (if url
+          [:a {:href url} name]
+          name)]
+       " - "
+       [:span.title
+        title]
+       [:span.period
+        (str start " — " end)]]
       [:ul.projects
        (map (fn [description]
               [:li.project [:p description]])
@@ -114,6 +119,8 @@
   "Publish the resume as HTML"
   [{:keys [resume/url
            resume/name
+           resume/email
+           resume/phone
            resume/tagline
            resume/notable-affiliations
            resume/location
@@ -132,10 +139,9 @@
     [:article
      [:header
       [:h1 name]
-      [:p.tagline tagline]
-      [:p.notable-affiliations (str/join " • " notable-affiliations)]
-      [:p.location
-       location]]
+      [:p.contact
+       (str email " " phone)]
+      [:p.tagline tagline]]
      [:section
       [:h2 "Summary"]
       [:section.subsection
@@ -175,8 +181,7 @@
 (comment
 
   (require 'com.benfle.resume :reload)
-  (in-ns 'com.benfle.resume)
 
-  (publish)
+  (com.benfle.resume/publish)
 
   )

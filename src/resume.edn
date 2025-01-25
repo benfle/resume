@@ -1,8 +1,9 @@
 #:resume{:url "http://benfle.com/resume"
          :name "Benoît Fleury"
-         :tagline "Senior Software Engineer / Technical Lead"
+         :email "me@benfle.com"
+         :phone "+1 (206) 403-7707"
+         :tagline "Senior Software Engineer • Technical Lead"
          :notable-affiliations ["Stripe" "Cognitect"]
-         :location "Tallahassee, Florida"
          :summary
          ["I solve problems with finely crafted software, preferably in <a href=\"https://clojure.org/\">Clojure</a> and <a href=\"https://www.datomic.com/\">Datomic</a>."
           "I am comfortable dealing with ambiguity. I enjoy finding the intersection between business opportunities and technical opportunities."

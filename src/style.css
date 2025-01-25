@@ -25,6 +25,10 @@ header p {
   margin-top: 5px;
 }
 
+p.contact {
+  float: right;
+}
+
 h1 {
   font-weight: normal;
   font-size: 25px;
@@ -93,11 +97,12 @@ div.right li {
   list-style-type: none;
 }
 
-p.affiliation, p.period {
-  margin: 0;
+span.affiliation {
+
 }
 
-p.period {
+span.period {
+  float: right;
   color: #aaa;
 }
 
@@ -106,6 +111,7 @@ div.columns {
 }
 
 ul.projects {
+  clear: both;
   padding: 0 10px 0 0;
   flex: 2;
 }
