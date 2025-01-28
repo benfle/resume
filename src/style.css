@@ -2,15 +2,15 @@
 
 body {
   background: white;
-  font: 14px/18px helvetica, sans-serif;
+  font: 14px/20px helvetica, sans-serif;
   color: #555;
+  padding: 20px;
   display: flex;
   justify-content: center;
-  padding: 20px;
 }
 
 article {
-  width: 800px;
+  width: 600px;
 }
 
 /** header **/
@@ -18,15 +18,10 @@ article {
 header {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   letter-spacing: 1px;
-  color: #333;
 }
 
 header p {
   margin-top: 5px;
-}
-
-p.contact {
-  float: right;
 }
 
 h1 {
@@ -46,74 +41,44 @@ section {
 }
 
 section.subsection {
-  display: flex;
   margin: 0 0 20px 0;
-  page-break-inside: avoid;
 }
 
 h2 {
   font-weight: 200;
-  color: #999;
-  border-bottom: solid 1px #999;
+  border-bottom: solid 1px #aaa;
   margin-bottom: 10px;
+  color: #aaa;
 }
 
 h3 {
-  color: #333;
   font-weight: normal;
 }
 
 p {
-  margin-top: 5px;
-}
-
-em {
-  font-style: normal;
-  color: #f00;
+  margin-top: 8px;
 }
 
 a {
-  color: #666;
+  text-decoration: none;
+  color: #b1282b;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-div.left {
-  flex: 1 100px;
-}
-
-div.left img {
-  width: 90px;
-}
-
-div.right {
-  flex: 1 700px;
-  padding-left: 10px;
-}
-
-div.right li {
-  list-style-type: none;
-}
-
 span.affiliation {
-
+  font-weight: 600;
 }
 
 span.period {
-  float: right;
   color: #aaa;
-}
-
-div.columns {
-  display: flex;
+  float: right;
 }
 
 ul.projects {
-  clear: both;
   padding: 0 10px 0 0;
-  flex: 2;
 }
 
 /** footer **/

@@ -38,82 +38,48 @@
                               :resume/email
                               :resume/phone
                               :resume/tagline
-                              :resume/notable-affiliations
-                              :resume/summary
+                              :resume/goals
                               :resume/experience
                               :resume/education]))
 (s/def :resume/name string?)
 (s/def :resume/email string?)
 (s/def :resume/phone string?)
 (s/def :resume/tagline string?)
-(s/def :resume/notable-affiliations (s/coll-of string?))
 (s/def :resume/location string?)
-(s/def :resume/summary (s/coll-of string?))
+(s/def :resume/goals (s/coll-of string?))
 (s/def :resume/experience (s/coll-of ::work))
 (s/def :resume/education (s/coll-of ::education))
 
 ;; Publishing
-
-(defn image-mime-type
-  "Try to guess the mime-type from the image's filename suffix."
-  [image]
-  (let [mime-type (condp #(.endsWith %2 %1) image
-                    ".jpg" "image/jpeg"
-                    ".png" "image/png"
-                    ".svg" "image/svg+xml"
-                    ::unknown)]
-    (when (= mime-type ::unknown)
-      (throw (Exception. (str "Unknown image suffix: " image))))
-    mime-type))
-
-(defn inline-image
-  "Convert the image into a base64 encoded string."
-  [image]
-  (let [mime-type (image-mime-type image)
-        input (-> image io/resource io/input-stream)
-        output (java.io.ByteArrayOutputStream.)]
-    (base64/encoding-transfer input output)
-    (str "data:" mime-type ";base64," (.toString output))))
 
 (defn render-work
   [{:keys [work/period work/title work/projects work/affiliation work/recommendations]}]
   (let [{:keys [start end]} period
         {:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
     [:section.subsection
-     [:div.left
-      (when image
-        [:img {:src (inline-image (str "images/" image))
-               :alt name}])]
-     [:div.right
-      [:h3
-       [:span.affiliation
-        (if url
-          [:a {:href url} name]
-          name)]
-       " - "
-       [:span.title
-        title]
-       [:span.period
-        (str start " — " end)]]
-      [:ul.projects
-       (map (fn [description]
-              [:li.project [:p description]])
-            projects)]]]))
+     [:h3
+      [:span.affiliation
+       (if url
+         [:a {:href url} name]
+         name)]
+      ", "
+      [:span.title
+       title]
+      [:span.period
+       (str start " — " end)]]
+     (map (fn [description]
+            [:p description])
+          projects)]))
 
 (defn render-education
   [{:keys [education/affiliation education/diploma]}]
   (let [{:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
     [:section.subsection
-     [:div.left
-      (when image
-        [:img {:src (inline-image (str "images/" image))
-               :alt name}])]
-     [:div.right
-      [:h3
-       (if url
-         [:a {:href url} name]
-         name)]
-      [:p diploma]]]))
+     [:h3
+      (if url
+        [:a {:href url} name]
+        name)]
+     [:p diploma]]))
 
 (defn render-resume
   "Publish the resume as HTML"
@@ -122,9 +88,8 @@
            resume/email
            resume/phone
            resume/tagline
-           resume/notable-affiliations
            resume/location
-           resume/summary
+           resume/goals
            resume/experience
            resume/education] :as resume}]
   [:html {:lang "en"}
@@ -139,15 +104,14 @@
     [:article
      [:header
       [:h1 name]
-      [:p.contact
-       (str email " " phone)]
-      [:p.tagline tagline]]
+      [:p.tagline tagline]
+      [:p.email
+       email]
+      [:p.phone
+       phone]]
      [:section
-      [:h2 "Summary"]
-      [:section.subsection
-       [:div.left]
-       [:div.right
-        (map #(vector :p %) summary)]]]
+      [:h2 "Goals"]
+      (map #(vector :p %) goals)]
      [:section
       [:h2 "Experience"]
       (map render-work experience)]

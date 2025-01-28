@@ -2,17 +2,14 @@
          :name "Benoît Fleury"
          :email "me@benfle.com"
          :phone "+1 (206) 403-7707"
-         :tagline "Senior Software Engineer • Technical Lead"
-         :notable-affiliations ["Stripe" "Cognitect"]
-         :summary
-         ["I solve problems with finely crafted software, preferably in <a href=\"https://clojure.org/\">Clojure</a> and <a href=\"https://www.datomic.com/\">Datomic</a>."
-          "I am comfortable dealing with ambiguity. I enjoy finding the intersection between business opportunities and technical opportunities."
-          "I am detail-oriented and intentional in building <a href=\"https://www.infoq.com/presentations/Simple-Made-Easy/\">simple software</a>. It is the easiest way to build reliable and flexible software in the long term."
-          "I have experience leading a small engineering team and mentoring junior engineers."
-          "I have been working remotely for 15+ years and will consider remote opportunities only."]
+         :tagline "Software Engineer"
+         :goals
+         ["I am comfortable dealing with ambiguity. I enjoy finding the intersection between business opportunities and technical opportunities."
+          "I solve problems with finely crafted software, preferably in <a href=\"https://clojure.org/\">Clojure</a> and <a href=\"https://www.datomic.com/\">Datomic</a>. I am detail-oriented and intentional in building <a href=\"https://www.infoq.com/presentations/Simple-Made-Easy/\">simple software</a>. It is the easiest way to build reliable and flexible software in the long term."
+          "I have experience leading a small engineering team and mentoring junior engineers. I have been working remotely for 15+ years and will consider remote opportunities only."]
          :experience
-         [#:work{:period ["Jan 2022" "Jan 2025"]
-                 :title "Senior Software Engineer"
+         [#:work{:period ["Jan. 2022" "Jan. 2025"]
+                 :title "Software Engineer"
                  :affiliation
                  #:affiliation{:name "Stripe"
                                :url "https://stripe.com/"
@@ -24,8 +21,8 @@
                   "Reviewed and approved a dozen of changes to the Stripe API as part of the API review team."
                   "Mentored several junior engineers formally and informally during design pairing sessions."
                   "Implemented several features and fixed bugs in the PaymentMethods APIs, in Ruby and Java."]}
-          #:work{:period ["Jul 2020" "Nov 2021"]
-                 :title "Technical Lead"
+          #:work{:period ["Jul. 2020" "Nov. 2021"]
+                 :title "Software Engineer"
                  :affiliation
                  #:affiliation{:name "Dividend Finance"
                                :url "https://www.dividendfinance.com/"
@@ -35,8 +32,8 @@
                   "Designed and engineered a webhook system and its API."
                   "Improved the observability of the system by migrating to structured logging, developing a library to take care of all our monitoring needs, and implementing the frontend and backend of an audit trail."
                   "Initiated several documentation efforts, functional and technical."]}
-          #:work{:period ["Apr 2018" "Apr 2020"]
-                 :title "Senior Software Engineer"
+          #:work{:period ["Apr. 2018" "Apr. 2020"]
+                 :title "Software Engineer"
                  :affiliation
                  #:affiliation{:name "Centriq"
                                :url "https://www.mycentriq.com"
@@ -46,7 +43,7 @@
                   "Designed and engineered a uniform user notification system supporting various channels (transactional and digest emails, mobile push, slack)."
                   "Built a data ingestion pipeline in Clojure from heterogeneous third-party data sources to a Datomic database."
                   "Created a generic event system with a decoupled frontend/backend and integrated it with Cloudwatch for complete monitoring of our production system. Automated our deployment to AWS."]}
-          #:work{:period ["Mar 2017" "Jan 2018"]
+          #:work{:period ["Mar. 2017" "Jan. 2018"]
                  :title "Head of Engineering"
                  :affiliation
                  #:affiliation{:name "Access Watch"
@@ -56,7 +53,7 @@
                  ["Designed and engineered a real-time analytics service on top of Datomic in AWS. Redesigned the data model using Datomic information model."
                   "Built an auto-scalable worker environment to retrieve network information from external databases (DNS, WHOIS, DNS blacklists, Tor network...)."
                   "Initiated the development of an <a href=\"https://github.com/access-watch/access-watch\" title=\"Access Watch\">open-source stream processing framework</a> in JavaScript/node to create custom log processors."]}
-          #:work{:period ["Nov 2012" "Mar 2017"]
+          #:work{:period ["Nov. 2012" "Mar. 2017"]
                  :title "Software Engineer"
                  :affiliation
                  #:affiliation{:name "Cognitect"
@@ -65,7 +62,7 @@
                  :projects
                  ["As part of a team of two developers, I built the front-end and back-end of a simulation testing suite for one of the largest e-commerce platform in the world. The application was built in Clojure and Datomic with the <a href=\"https://github.com/Datomic/simulant\" title=\"Simulant github repository\">Simulant library</a>."
                   "Built a real-time database replication system in Clojure on AWS (DynamoDB, S3) for one of the biggest hotel chain in the United States. The service processed a constant stream of room rates and availability updates represented as XML documents. The updates were processed and stored into DynamoDB tables. All updates were logged to S3 for recovery purpose."]}
-          #:work{:period ["May 2011" "May 2012"]
+          #:work{:period ["May. 2011" "May. 2012"]
                  :title "Software Design Engineer"
                  :affiliation
                  #:affiliation{:name "Amazon"
@@ -74,7 +71,7 @@
                  :projects
                  ["Initiated the engineering of the backend services to support AmazonLocal on Kindle with special offers."
                   "Built a web application to support the work of the production associates."]}
-          #:work{:period ["Apr 2010" "Apr 2011"]
+          #:work{:period ["Apr. 2010" "Apr. 2011"]
                  :title "Program Manager"
                  :affiliation
                  #:affiliation{:name "Microsoft"
@@ -85,7 +82,7 @@
                   "Designed and drove adoption of a new type of ad appropriate to mobile devices."
                   "Wrote and drove adoption of a list of core client scenarios with the Bing mobile team for a mobile coupon platform. Made a proposal to the business team that has been accepted."
                   "Investigated scenarios and requirements related to billing and fraud components. Delivered a detailed functional specification of these two components."]}
-          #:work{:period ["Nov 2008" "Apr 2010"]
+          #:work{:period ["Nov. 2008" "Apr. 2010"]
                  :title "Software Design Engineer"
                  :affiliation
                  #:affiliation{:name "Microsoft"
@@ -95,7 +92,7 @@
                  ["Participated to the development of several versions of the mobile advertising platform in C#, .NET, SQLServer, Cosmos."
                   "Designed two versions of our REST protocol for mobile ad delivery."
                   "Built a support tool to allow users to directly query the ad platform. The tool was widely used among the support team to troubleshoot potential issues."]}
-          #:work{:period ["Jul 2006" "Oct 2008"]
+          #:work{:period ["Jul. 2006" "Oct. 2008"]
                  :title "Software Engineer"
                  :affiliation #:affiliation{:name "ScreenTonic"
                                             :image "screentonic.jpg"
