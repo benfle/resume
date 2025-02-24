@@ -9,7 +9,7 @@
           "I have experience leading a small engineering team and mentoring junior engineers. I have been working remotely for 15+ years and will consider remote opportunities only."]
          :experience
          [#:work{:period ["Jan. 2022" "Jan. 2025"]
-                 :title "Software Engineer"
+                 :title "Senior Software Engineer"
                  :affiliation
                  #:affiliation{:name "Stripe"
                                :url "https://stripe.com/"
@@ -22,7 +22,7 @@
                   "Mentored several junior engineers formally and informally during design pairing sessions."
                   "Implemented several features and fixed bugs in the PaymentMethods APIs, in Ruby and Java."]}
           #:work{:period ["Jul. 2020" "Nov. 2021"]
-                 :title "Software Engineer"
+                 :title "Senior Software Engineer"
                  :affiliation
                  #:affiliation{:name "Dividend Finance"
                                :url "https://www.dividendfinance.com/"
@@ -33,7 +33,7 @@
                   "Improved the observability of the system by migrating to structured logging, developing a library to take care of all our monitoring needs, and implementing the frontend and backend of an audit trail."
                   "Initiated several documentation efforts, functional and technical."]}
           #:work{:period ["Apr. 2018" "Apr. 2020"]
-                 :title "Software Engineer"
+                 :title "Senior Software Engineer"
                  :affiliation
                  #:affiliation{:name "Centriq"
                                :url "https://www.mycentriq.com"
@@ -44,7 +44,7 @@
                   "Built a data ingestion pipeline in Clojure from heterogeneous third-party data sources to a Datomic database."
                   "Created a generic event system with a decoupled frontend/backend and integrated it with Cloudwatch for complete monitoring of our production system. Automated our deployment to AWS."]}
           #:work{:period ["Mar. 2017" "Jan. 2018"]
-                 :title "Head of Engineering"
+                 :title "Technical Lead"
                  :affiliation
                  #:affiliation{:name "Access Watch"
                                :url "http://access.watch"
@@ -54,7 +54,7 @@
                   "Built an auto-scalable worker environment to retrieve network information from external databases (DNS, WHOIS, DNS blacklists, Tor network...)."
                   "Initiated the development of an <a href=\"https://github.com/access-watch/access-watch\" title=\"Access Watch\">open-source stream processing framework</a> in JavaScript/node to create custom log processors."]}
           #:work{:period ["Nov. 2012" "Mar. 2017"]
-                 :title "Software Engineer"
+                 :title "Software Engineer Consultant"
                  :affiliation
                  #:affiliation{:name "Cognitect"
                                :url "http://cognitect.com"
@@ -91,18 +91,10 @@
                  :projects
                  ["Participated to the development of several versions of the mobile advertising platform in C#, .NET, SQLServer, Cosmos."
                   "Designed two versions of our REST protocol for mobile ad delivery."
-                  "Built a support tool to allow users to directly query the ad platform. The tool was widely used among the support team to troubleshoot potential issues."]}
-          #:work{:period ["Jul. 2006" "Oct. 2008"]
-                 :title "Software Engineer"
-                 :affiliation #:affiliation{:name "ScreenTonic"
-                                            :image "screentonic.jpg"
-                                            :url "https://en.wikipedia.org/wiki/ScreenTonic"}
-                 :projects
-                 ["Engineered several features of the ad server on the LAMP stack (Linux, Apache, MySQL, PHP)."
-                  "Initiated the engineering of a framework for integrated tests and wrote the test fixtures for the existing functionalities."
-                  "Designed a RDF over HTTP protocol to exchange campaign information between the ad manager and the ad server."]}]
+                  "Built a support tool to allow users to directly query the ad platform. The tool was widely used among the support team to troubleshoot potential issues."]}]
          :education
-         [#:education{:affiliation
+         [#:education{:period ["Sep. 2002" "Jun. 2006"]
+                      :affiliation
                       #:affiliation{:name "ENSEEIHT (France)"
                                     :url
                                     "http://www.enseeiht.fr/en/index.html"

@@ -29,10 +29,12 @@
 (s/def :work/affiliation ::affiliation)
 (s/def :work/projects (s/coll-of string?))
 (s/def :work/recommendations (s/coll-of ::recommendation))
-(s/def ::education (s/keys :req [:education/affiliation
+(s/def ::education (s/keys :req [:education/period
+                                 :education/affiliation
                                  :education/diploma]))
 (s/def :education/affiliation ::affiliation)
 (s/def :education/diploma string?)
+(s/def :education/period :work/period)
 (s/def ::resume (s/keys :req [:resume/url
                               :resume/name
                               :resume/email
@@ -72,13 +74,17 @@
           projects)]))
 
 (defn render-education
-  [{:keys [education/affiliation education/diploma]}]
-  (let [{:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
+  [{:keys [education/affiliation education/diploma education/period]}]
+  (let [{:keys [start end]} period
+        {:keys [affiliation/name affiliation/url affiliation/image]} affiliation]
     [:section.subsection
      [:h3
-      (if url
-        [:a {:href url} name]
-        name)]
+      [:span.affiliation
+       (if url
+         [:a {:href url} name]
+         name)]
+      [:span.period
+       (str start " — " end)]]
      [:p diploma]]))
 
 (defn render-resume

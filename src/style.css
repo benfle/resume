@@ -1,5 +1,11 @@
 * { margin: 0; padding: 0; }
 
+@media print {
+  section.subsection {
+    break-inside: avoid;
+  }
+}
+
 body {
   background: white;
   font: 14px/20px helvetica, sans-serif;
